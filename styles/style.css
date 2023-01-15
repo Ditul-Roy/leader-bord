@@ -1,0 +1,134 @@
+/* common style cotainer */
+.container{
+    background-color: #E5E5E5;;
+}
+.priamry-title{
+    font-size: 25px;
+    color: #562EFF;
+}
+.container-section{
+    width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+
+}
+/* main content style */
+
+
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/* players content style */
+
+.player-title, .b-title, .b-des{
+    margin-left:16px;
+    font-size: 18px;
+}
+
+/* .top-players, .blogs{
+    padding: 30px;
+} */
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.player, .blog-thambline{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.top-players img{
+    height: 56px;
+    width: 56px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+/* blogs content style */
+
+.thambline img{
+    height: 117px;
+    width: 177px;
+}
+.b-des-color{
+    color: 
+    #9F9F9F;
+}
+.top-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*----------------------
+ course detrails section
+ ----------------------- */
+.coureses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+ .course-banner img{
+    width: 224px;
+    height: 104px;
+ }
+ .rating .filled{
+    font-size: 12px;
+    color: #FFC014;
+ }
+ .rating .empty{
+    font-size: 12px;
+    color:#9F9F9F;
+ }
+ .course-info .course-duration{
+    font-size: 12px;
+    border: 1px solid #9F9F9F;
+    border-radius: 50px; 
+    background-color: #9F9F9F;
+ }
+ .course-title{
+    font-size: 20px;
+ }
+ .course-des{
+    font-size: 14px;
+    color: #ED6B4F;
+ }
+ .course-info{
+    display: flex;
+    justify-content: space-between;
+ }
+ /*--------------------
+  media quries style
+  ------------------- */
+  /* mobile devise */
+
+  @media only screen and (max-width: 688px) {
+    
+    .container-section{
+        width: 100%;
+    }
+     
+    .top-player, .top-blog, .coureses{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+            justify-self: center;
+            
+        }
+  }
+  /* medium device */
+  @media only screen and (min-width:688px) and (max-width:992px) {
+    .container-section{
+        width: 100%;
+    }
+    .priamry-title{
+        text-align: center;
+    }
+    .top-player{
+        
+        grid-template-columns: repeat(3,2fr);
+    }
+    
+  }
